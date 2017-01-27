@@ -75,6 +75,7 @@ type Connection struct {
 }
 
 type Node interface {
+	Name() string
 	Connections() []Connection
 	Cities() []Player
 }
